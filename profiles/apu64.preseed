@@ -56,6 +56,8 @@ d-i grub-installer/bootdev  string default
 # kernel is to be installed.
 d-i base-installer/kernel/image string linux-image-amd64
 
+# Enable backports
+d-i apt-setup/backports boolean true
 
 # Some versions of the installer can report back on what software you have
 # installed, and what software you use. The default is not to report back,
